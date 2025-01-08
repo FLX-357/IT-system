@@ -22,14 +22,14 @@
           </ul>
         </header>
       </div> 
-   
+   <div class="LOL"></div>
       <script>
         // Daten aus dem LocalStorage abrufen
         const ticketData = JSON.parse(localStorage.getItem("ticketData"));
     
         if (ticketData) {
             // Inhalte dynamisch in den Body einfügen
-            document.body.innerHTML = `
+            document.LOL.innerHTML = `
                 <h1>Meine Tickets</h1>
                 <p><strong>Vorname:</strong> ${ticketData.firstName}</p>
                 <p><strong>Nachname:</strong> ${ticketData.lastName}</p>
