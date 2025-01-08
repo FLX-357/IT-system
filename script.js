@@ -19,3 +19,4 @@ document.getElementById("submitTicketButton").addEventListener("click", function
     // Nutzer zur Seite "Meine Tickets" weiterleiten
     window.location.href = "MeineTickets.html";
 });
+ 
