@@ -23,34 +23,25 @@
         </header>
       </div> 
    <div id="vt"></div>
-      
-    <script>
-      // Daten aus dem LocalStorage abrufen
-      const ticketData = JSON.parse(localStorage.getItem("ticketData"));
-  
-      // Ziel-Element mit der Klasse "LOL" auswählen
-      const targetDiv = document.getElementById("vt")
-  
-      if (ticketData) {
-          // Neues Ticket als HTML-Block erstellen
-          const ticketHtml = `
-              <div class="ticket">
-                  <h3>Neues Ticket</h3>
-                  <p><strong>Vorname:</strong> ${ticketData.firstName}</p>
-                  <p><strong>Nachname:</strong> ${ticketData.lastName}</p>
-                  <p><strong>Martikelnummer:</strong> ${ticketData.username}</p>
-                  <p><strong>Email:</strong> ${ticketData.email}</p>
-                  <p><strong>Problem:</strong> ${ticketData.problem}</p>
-                  <hr>
-              </div>
-          `;
-  
-          // Ticket-HTML an das Ende des Ziel-Elements anhängen
-          targetDiv.innerHTML += ticketHtml;
-      } else {
-          targetDiv.innerHTML += "<p>Keine Tickets gefunden</p>";
-      }
-  </script>
+      <script>
+        // Daten aus dem LocalStorage abrufen
+        const ticketData = JSON.parse(localStorage.getItem("ticketData"));
+     
+        if (ticketData) {
+            // Inhalte dynamisch in den Body einfügen
+            document.getElementById("vt").innerHTML = `
+                <h1>Meine Tickets</h1>
+                <p><strong>Vorname:</strong> ${ticketData.firstName}</p>
+                <p><strong>Nachname:</strong> ${ticketData.lastName}</p>
+                <p><strong>Martikelnummer:</strong> ${ticketData.username}</p>
+                <p><strong>Email:</strong> ${ticketData.email}</p>
+                <p><strong>Problem:</strong> ${ticketData.problem}</p>
+            `;
+        } else {
+            document.body.innerHTML = "<h1>Keine Tickets gefunden</h1>";
+        }
+    </script>
+   
     
 </body>
 </html>
