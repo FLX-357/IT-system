@@ -11,36 +11,17 @@
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar">
-    <div class="container">
-      <a class="navbar-brand logo" href="#">Brand</a
-      ><button
-        data-bs-toggle="collapse"
-        class="navbar-toggler"
-        data-bs-target="#navcol-1"
-      >
-        <span class="visually-hidden">Toggle navigation</span
-        ><span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navcol-1">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Ticketerstelle.html">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="MeineTickets.html">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="test2.html">Payment</a>
-          </li>
-    
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div id="navbar" class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="Ticketerstelle.html" class="nav-link">Ticket erstellen</a></li>
+        <li class="nav-item"><a href="MeineTickets.html" class="nav-link">meine Tickets</a></li>
+        <li class="nav-item"><a href="Test.html" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      </ul>
+    </header>
+  </div> 
       
   
   <hr>
@@ -104,7 +85,26 @@
               <button id="submitTicketButton" class="w-100 btn btn-primary btn-lg" type="submit">Tiket abschicken</button>
               <button onclick="Modal()">Rezensionen</button>
 
-             
+              <div class="modal show">
+                  <a href="#close" class="modal-overlay"></a>
+                  <div class="modal-container">
+                      <div class="modal-header">
+                          <a href="#close" onclick="potato()" class="btn btn-clear float-right">
+                          </a>
+                          <p>Rezensionen
+                      </div>
+                      <div class="modal-body">
+                          <div class="content">
+                              <p>
+                                  Bitte geben Sie eine Rezension ab.
+                              </p>
+          
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                          Vielen Dank.
+                      </div>
+                  </div>
               </div>
             </form>
           </div>
