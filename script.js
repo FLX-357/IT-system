@@ -17,5 +17,5 @@ document.getElementById("submitTicketButton").addEventListener("click", function
     }));
 
   
-    window.location.href = "MeineTickets.html";
+   
 });
