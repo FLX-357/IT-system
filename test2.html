@@ -60,39 +60,35 @@
               <h3 class="title"></h3>
               <div class="row">
                 <div class="col-sm-7 col-xxl-11">
-                  <div class="mb-3">
-                    <label class="form-label" id="firstName" for="card_holder">name:</label
-                    ><input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                  
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                   
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="username" class="form-label">Martikelnummer</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text">stud:</span>
+                      <input type="text" class="form-control" id="username" placeholder="Username" >
+                   
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="you@fh-wedel.de">
                     
                   </div>
-                  <div class="mb-3">
-                    <label class="form-label" id="lastName" for="card_holder">name:</label
-                    ><input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+      
+                
+                  <div   class="col-12">
+                    <label for="text" class="form-label"></label>
+                    <input  type="text"  class="form-control" id="test" placeholder="Your Problem...">
                     
                   </div>
-                </div>
-                <div class="col-sm-7">
-                  <div class="mb-3">
-                    <label class="form-label" id="username" for="card_holder-2">Martikel Nummer:</label
-                    ><input type="text" class="form-control" id="username" placeholder="Username" >
-                    
-                  </div>
-                </div>
-                <div class="col-sm-7">
-                  <div class="mb-3">
-                    <label class="form-label" id="username" for="card_holder-2">Mail:</label
-                    ><input type="email" class="form-control" id="email" placeholder="you@fh-wedel.de">
-                    
-                  </div>
-                </div>
-                <div class="col-sm-7">
-                  <div class="mb-3">
-                    <label class="form-label" for="card_holder-1">Problem:</label
-                    > <input  type="text"  class="form-control" id="test" placeholder="Your Problem...">
-                    
-                  </div>
-                </div>
-                <div class="col-sm-12">
+                  
                   <div class="mb-3">
                     <button id="submitTicketButton" class="btn btn-primary d-block w-100" type="submit">
                       Proceed
