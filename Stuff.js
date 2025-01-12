@@ -12,13 +12,13 @@ function Test() {
 let modalElement = document.querySelector(".modal");
 function Modal() {
 
-
+ console.log('Test')
     modalElement.classList.add("active");
 }
 
 function potato() {
 
-
+    console.log('Test')
     modalElement.classList.remove("active");
 }
 
