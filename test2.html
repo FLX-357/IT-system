@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Payment - Brand</title>
+    <title>ticketerstellen</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css" />
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar">
@@ -39,7 +40,7 @@
               <a class="nav-link" href="MeineTickets.html">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="test2.html">Payment</a>
+              <a class="nav-link active" href="test2.html">Ticket erstellen 2</a>
             </li>
       
           </ul>
@@ -55,47 +56,41 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam
               urna, dignissim nec auctor in, mattis vitae leo.
             </p>
-          </div>
+          </div> id="lastName"
           <form>
             <div class="card-details">
               <h3 class="title"></h3>
               <div class="row">
                 <div class="col-sm-7 col-xxl-11">
                   <div class="mb-3">
-                    <label class="form-label" for="card_holder">name:</label
-                    ><input
-                      class="form-control"
-                      type="text"
-                      id="card_holder"
-                      placeholder="Card Holder"
-                      name="card_holder"
-                      data-bs-theme="light"
+                    <label class="form-label" id="firstName" for="card_holder">name:</label
+                    ><input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" id="lastName" for="card_holder">name:</label
+                    ><input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
                     />
                   </div>
                 </div>
                 <div class="col-sm-7">
                   <div class="mb-3">
-                    <label class="form-label" for="card_holder-2">name:</label
-                    ><input
-                      class="form-control"
-                      type="text"
-                      id="card_holder-2"
-                      placeholder="Card Holder"
-                      name="card_holder"
-                      data-bs-theme="light"
+                    <label class="form-label" id="username" for="card_holder-2">Martikel Nummer:</label
+                    ><input type="text" class="form-control" id="username" placeholder="Username" required="">
                     />
                   </div>
                 </div>
                 <div class="col-sm-7">
                   <div class="mb-3">
-                    <label class="form-label" for="card_holder-1">name:</label
-                    ><input
-                      class="form-control"
-                      type="text"
-                      id="card_holder-1"
-                      placeholder="Card Holder"
-                      name="card_holder"
-                      data-bs-theme="light"
+                    <label class="form-label" id="username" for="card_holder-2">Mail:</label
+                    ><input type="email" class="form-control" id="email" placeholder="you@fh-wedel.de">
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-7">
+                  <div class="mb-3">
+                    <label class="form-label" for="card_holder-1">Problem:</label
+                    > <input  type="text"  class="form-control" id="test" placeholder="Your Problem...">
                     />
                   </div>
                 </div>
