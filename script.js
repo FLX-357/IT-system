@@ -19,15 +19,3 @@ document.getElementById("submitTicketButton").addEventListener("click", function
     // Nutzer zur Seite "Meine Tickets" weiterleiten
     window.location.href = "MeineTickets.html";
 });
-let modalElement = document.querySelector(".modal");
-function Modal() {
-
-
-    modalElement.classList.add("active");
-}
-
-function potato() {
-
-
-    modalElement.classList.remove("active");
-}
